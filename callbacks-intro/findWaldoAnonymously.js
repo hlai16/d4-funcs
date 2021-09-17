@@ -5,10 +5,10 @@ const findWaldo = function(names, found) {
     }
   });
 };
-  
-  
-const actionWhenFound = function(name) {
+    
+    
+(name) => {
   console.log(`Found ${name}!`);
 };
-  
-findWaldo(["Alice", "Bob", "Waldo", "Winston"], actionWhenFound);
+    
+findWaldo(["Alice", "Bob", "Waldo", "Winston"], (name) => console.log(`Found ${name}!`));
